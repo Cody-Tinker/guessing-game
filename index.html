@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cody's Guessing Game</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- javascript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- page container -->
+    <div id="full-container" class="full-container">
+      <div id="header" class="header">
+        <h1 class="title">Cody's Guessing Game</h1>
+      </div>
+
+      <!-- game container -->
+      <div id="game-container" class="game-container">
+        <h3 class="instructions">
+          Guess A Number Between <span class="boldText">1 - 100</span>!
+        </h3>
+
+        <!-- user input box and button -->
+        <div id="input-box" class="input-box">
+          <input
+            type="text"
+            id="user-input"
+            class="user-input"
+            autocomplete="off"
+            autofocus
+          />
+          <div id="buttons" class="buttons">
+            <input
+              type="submit"
+              value="Guess!"
+              id="submit-btn"
+              class="submit-btn"
+              onclick="submitGuess()"
+            />
+            <input
+              type="submit"
+              value="Play Again"
+              id="playBtn"
+              class="playBtn"
+              onclick="window.location.reload()"
+            />
+          </div>
+        </div>
+
+        <!-- output/hints section -->
+        <div id="output" class="output">
+          <p id="info1">Let's Do This!</p>
+          <br />
+          <p id="info2">Guesses Left:</p>
+          <p id="info3">Previous Guesses:</p>
+        </div>
+
+        <!-- reload button -->
+        <div id="reload" class="reload">
+          <a href="javascript:location.reload(true)"><button>Reset</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

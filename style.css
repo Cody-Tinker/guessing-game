@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #e845eb 100%);
+}
+
+.full-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  font-family: "Poppins";
+  margin-top: 60px;
+}
+
+.header {
+  color: whitesmoke;
+  text-align: left;
+  width: 47%;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.instructions {
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 500px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-input {
+  height: 90px;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+  border: 2px solid rgb(2, 2, 2);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #40c6dd;
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.submit-btn {
+  color: whitesmoke;
+  background-color: rgb(175, 59, 175);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.playBtn {
+  color: whitesmoke;
+  background-color: rgb(28, 103, 223);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.output {
+  padding: 0px 10px;
+}
+
+#info1 {
+  font-size: 25px;
+}
+
+.reload button {
+  margin-top: 10px;
+  margin-left: 850px;
+  color: rgb(250, 250, 250);
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 550px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .header {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 15px;
+  }
+
+  .reload button {
+    margin-left: 300px;
+    margin-top: 60px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+}
